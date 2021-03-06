@@ -28,7 +28,7 @@ height : auto;
 <body>
 <h1> Is palindrom?</h1>
 <img src=\"./palindromes-clipart-3.jpg\">
-<form action=\".\palindrom.php\" method='GET'>
+<form action=\".\index.php\" method='GET'>
 <input type='text' name='name'>
     
 <input type='submit' value='submit'>
