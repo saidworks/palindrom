@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 $name = "";
 $nameReverserd = "";
 if (isset($_GET["name"])){
