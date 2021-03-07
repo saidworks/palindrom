@@ -3,10 +3,10 @@
 $name = "";
 $nameReverserd = "";
 if (isset($_GET["name"])){
-    $name = $_GET["name"];
+    $name = trim($_GET["name"]);
 }
-else {
-    $name='invalid entry';
+else if (strlen($name)>0) {
+    $name='enter a word please';
 }
 
 
@@ -45,10 +45,10 @@ for($i=0; $i <= strlen($name); $i++){
     $nameReverserd .= $name[strlen($name)-$i];
     
 }
-if($nameReverserd ===$name){
+if($nameReverserd ===$name & strlen($nameReverserd)>0){
     echo "$name is a palindrom word";
 }
-else{
+else if ($nameReverserd !==$name & strlen($nameReverserd)>0){
     echo "$name is not a palindrom word";
 }
 
